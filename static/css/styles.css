@@ -3133,6 +3133,12 @@ main :not(pre) > code {
   flex-wrap: wrap;
   gap: 0.4rem;
   margin: 0 0 0.75rem;
+  /* centred on small screens */
+}
+@media (max-width: 768px) {
+  .tabs .tab-links {
+    justify-content: center;
+  }
 }
 .tabs .tab-links > li {
   padding: 0;

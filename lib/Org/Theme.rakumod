@@ -156,6 +156,11 @@ method SCSS { q:to/END/;
         flex-wrap: wrap;
         gap: 0.4rem;
         margin: 0 0 0.75rem;
+
+        /* centred on small screens */
+        @media (max-width: 768px) {
+          justify-content: center;
+        }
       }
       .tab-links > li {
         padding: 0;
